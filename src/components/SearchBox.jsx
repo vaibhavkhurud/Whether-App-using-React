@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 
 function SearchBox({updateInfo}) {
  
-    let [city, setCity] = React.useState();
+    let [city, setCity] = React.useState(); 
     const API_URL = "https://api.openweathermap.org/data/2.5/weather";
     const API_KEY = "736226f10682178c8de1e55763aecf95";
 
