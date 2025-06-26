@@ -19,7 +19,7 @@ function InfoBox({info}) {
     <div className='Cards'>
       <Cards icon={Wind} text="Wind Speed" data={info.windspeed} unit= 'km/h'/>
       <Cards icon={Humidity} text="Humidity" data={info.humidity} unit='%' />
-      <Cards icon={FeelsLike} text="Feels Like" data={info.feelsLike}unit='' />
+      <Cards icon={FeelsLike} text="Feels Like" data={info.feelsLike} unit='°C' />
       <Cards icon={Pressure} text="Pressure" data={info.pressure} unit='hPa' />
     </div>
   </div>
