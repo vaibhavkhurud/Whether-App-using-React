@@ -1,0 +1,210 @@
+.App {
+    background-image: url(./img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    height: 100%;
+    width: 50%;
+    margin: 15px auto;
+}
+
+.hero {
+    background-color: rgba(233, 250, 255, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 75%;
+    height: 88vh;
+    margin: 1rem auto;
+    padding: 25px;
+    border-radius: 32px;
+}
+
+.SearchBox {
+    text-align: center;
+}
+
+.InfoBox {
+    text-align: center;
+    height: 20vh;
+    width: 38vh;
+    margin: 0 auto;
+}
+
+.City {
+    margin: 0 14rem;
+    width: 20vh;
+    text-align: center;
+}
+
+.City p {
+    margin: 0;
+    width: 18vh;
+}
+
+.Temp {
+    max-width: 63vh;
+    margin-top: 35px;
+    margin: 19px 81px;
+}
+
+.Temp img {
+    height: 150px;
+}
+
+.Temp p {
+    position: relative;
+    bottom: 60px;
+    margin-left: 12rem;
+    font-weight: bold;
+}
+
+.sun-temp {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sun-temp h2 {
+    margin-right: 2.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.Card {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 25vh;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.Card img {
+    height: 38px;
+    margin-top: 11px;
+}
+
+.desc h4 {
+    margin-top: -15px;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-left: -6rem;
+}
+
+
+/* ===================== Tablet (<= 1024px) ===================== */
+@media screen and (max-width: 1200px) {
+    .App {
+        width: 100%;
+    }
+
+    .hero {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .City {
+        margin: auto;
+    }
+
+    .Temp {
+        margin: 20px auto;
+    }
+
+    .Temp p {
+        margin-left: 24rem;
+    }
+
+    .sun-temp h2 {
+        font-size: 2.5rem;
+    }
+
+    .Card {
+        height: 86px;
+        width: 27vh;
+    }
+
+    .desc h4 {
+        margin-top: -15px;
+        font-size: medium;
+    }
+
+    .desc p {
+        font-size: larger;
+        font-weight: bold;
+    }
+
+
+
+}
+
+/* ===================== Mobile (<= 768px) ===================== */
+@media screen and (max-width: 768px) {
+    .App {
+        width: 95%;
+        height: 65rem;
+        /* padding: 10px; */
+    }
+
+    .hero {
+        height: 61rem;
+        width: 90%;
+        /* height: auto; */
+        padding: 10px;
+    }
+
+    .City {
+        margin: 0 auto;
+    }
+
+    .City p {
+        width: 100%;
+    }
+
+    .Temp {
+        margin: 10px auto;
+        max-width: 100%;
+    }
+
+    .Temp img {
+        height: 100px;
+    }
+
+    .Temp p {
+        padding: 9px;
+        margin-left: 3rem;
+        bottom: 30px;
+    }
+
+    .sun-temp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sun-temp h2 {
+        font-size: 2rem;
+        margin: 0.5rem 0;
+    }
+
+    .Cards {
+        grid-template-columns: 1fr;
+        /* stack vertically */
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .Card {
+        width: 100%;
+    }
+
+    .card img {
+        margin-top: 28px;
+    }
+}
